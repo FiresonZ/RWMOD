@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "升级模组",
+        "Img": "/img/UpdateMod.png",
+        "Adress": "/mod/UpdateMod/V5.rwmod",
+        "Version": "5.0.0",
+        "Author": "懒鸽rwmod"
+    },
+    {
+        "Name": "铁锈大招版",
+        "Img": "/img/UltimateSkill.png",
+        "Adress": "/mod/UltimateSkill/V2.9.rwmod",
+        "Version": "2.9.0",
+        "Author": "雪狐(b站ID:宅宅雪豌豆)"
+    }
+]
