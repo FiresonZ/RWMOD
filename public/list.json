@@ -1,16 +1,66 @@
 [
     {
         "Name": "升级模组",
-        "Img": "/img/UpdateMod.png",
-        "Adress": "/mod/UpdateMod/V5.rwmod",
+        "Img": "/mod/UpdateMod/UpdateMod.png",
+        "Adress": "/mod/UpdateMod/UpdateModV5.rwmod",
         "Version": "5.0.0",
+        "GameVersion": "未知",
         "Author": "懒鸽rwmod"
     },
     {
         "Name": "铁锈大招版",
-        "Img": "/img/UltimateSkill.png",
-        "Adress": "/mod/UltimateSkill/V2.9.rwmod",
+        "Img": "/mod/UltimateSkill/UltimateSkill.png",
+        "Adress": "/mod/UltimateSkill/UltimateSkillV2.9.rwmod",
         "Version": "2.9.0",
+        "GameVersion": "未知",
         "Author": "雪狐(b站ID:宅宅雪豌豆)"
+    },
+    {
+        "Name": "日冕",
+        "Img": "/mod/Corona/Corona.png",
+        "Adress": "/mod/Corona/CoronaV4.rwmod",
+        "Version": "4.0.0",
+        "GameVersion": "未知",
+        "Author": "原作者：M97\n汉化：日冕工作室"
+    },
+    {
+        "Name": "僵尸生存",
+        "Img": "/mod/ZombieSurvival/ZombieSurvival.png",
+        "Adress": "/mod/ZombieSurvival/ZombieSurvivalV2.rwmod",
+        "Version": "2.0.0",
+        "GameVersion": "未知",
+        "Author": "EssentialStrategy"
+    },
+    {
+        "Name": "二战1945",
+        "Img": "/mod/WWII1945/WWII1945.png",
+        "Adress": "/mod/WWII1945/WWII1945V0.1.rwmod",
+        "Version": "0.1.0",
+        "GameVersion": "未知",
+        "Author": "原作者：Peter\n汉化：新安州"
+    },
+    {
+        "Name": "第三次世界大战",
+        "Img": "/mod/WW3UCGR/WW3UCGR.png",
+        "Adress": "/mod/WW3UCGR/WW3UCGRV4.1.rwmod",
+        "Version": "4.1.0",
+        "GameVersion": "未知",
+        "Author": "原作者：Reihan\n重制：UCGR制作组&GY-MW制作组"
+    },
+    {
+        "Name": "远征-日落之时",
+        "Img": "/mod/Sunset/Sunset.png",
+        "Adress": "/mod/Sunset/SunsetV0.18.rwmod",
+        "Version": "0.18.0",
+        "GameVersion": "1.15P4及以上版本",
+        "Author": "STR工作室\n光辉与火"
+    },
+    {
+        "Name": "大屠杀",
+        "Img": "/mod/Bloodbath/Bloodbath.png",
+        "Adress": "/mod/Bloodbath/BloodbathV1.3.rwmod",
+        "Version": "1.3.0",
+        "GameVersion": "未知",
+        "Author": "原作者：Essential Strategy\n汉化者：比那名居天子"
     }
 ]
