@@ -12,7 +12,7 @@
     <div class="pure-g" v-for="Pos in [1,2,3,4,5,6,7,8,9,10]" :style="{width:'100%',background:Pos%2?'GhostWhite':'White'}">
       <View v-if="Pos+PageCnt*10<=ModCnt" :DataNum=ModCnt-Pos+PageCnt*10></View>
     </div>
-    <div class="pure-g">
+    <div class="pure-g" style="left:0%;right:0%;">
       <div class="pure-u-1-3"><button class="pure-button pure-button-primary" @click="PageCnt>0?PageCnt--:null">上一页</button></div>
       <div class="pure-u-1-3"><p>第{{PageCnt+1}}页</p></div>
       <div class="pure-u-1-3"><button class="pure-button pure-button-primary" @click="PageCnt<ModCnt/10-1?PageCnt++:null">下一页</button></div>
