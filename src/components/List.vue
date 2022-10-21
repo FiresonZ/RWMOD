@@ -2,6 +2,9 @@
   <h1 style="position: absolute;top: 9%;left:4%;">模组列表</h1>
   <div style="position: absolute;top: 20%;left:4%;width:100%">
     <div class="pure-g" style="width:100%;">
+      <div class="pure-u-1-5"><div class="l-box"><p>搜索</p><input v-model="key"></div></div>
+    </div>
+    <div class="pure-g" style="width:100%;">
       <div class="pure-u-1-6"><div class="l-box"><p></p></div></div>
       <div class="pure-u-1-6"><div class="l-box"><p>模组名称</p></div></div>
       <div class="pure-u-1-6"><div class="l-box"><p>作者</p></div></div>
@@ -9,8 +12,11 @@
       <div class="pure-u-1-6"><div class="l-box"><p>游戏版本</p></div></div>
       <div class="pure-u-1-6"><div class="l-box"><p>下载</p></div></div>
     </div>
-    <div class="pure-g" v-for="Pos in [1,2,3,4,5,6,7,8,9,10]" :style="{width:'100%',background:Pos%2?'GhostWhite':'White'}">
+    <div v-if="key==''" class="pure-g" v-for="Pos in [1,2,3,4,5,6,7,8,9,10]" :style="{width:'100%',background:Pos%2?'GhostWhite':'White'}">
       <View v-if="Pos+PageCnt*10<=ModCnt" :DataNum=ModCnt-Pos+PageCnt*10></View>
+    </div>
+    <div v-else class="pure-g" v-for="Pos in fSearch" :style="{width:'100%',background:Pos%2?'GhostWhite':'White'}">
+      <View :DataNum="Pos.id"></View>
     </div>
     <div class="pure-g" style="left:0%;right:0%;">
       <div class="pure-u-1-3"><button class="pure-button pure-button-primary" @click="PageCnt>0?PageCnt--:null">上一页</button></div>
@@ -34,11 +40,24 @@ export default {
     return{
       Data:JSON.parse(localStorage.getItem('ModData')),
       ModCnt:0,//Mod数量
-      PageCnt:0//当前页数
+      PageCnt:0,//当前页数,
+      key:''
     }
   },
   created:function(){
     this.ModCnt=this.Data.length;
+  },
+  computed:{
+    fSearch(){
+      if(this.key){
+        return this.Data.filter((value)=>{
+          console.log(value.Name);
+          console.log(this.key);
+          console.log(value.Name.includes(this.key));
+          return value.Name.includes(this.key);
+        });
+      }
+    }
   }
 }
 </script>
